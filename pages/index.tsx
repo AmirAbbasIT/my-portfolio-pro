@@ -43,11 +43,13 @@ export default function Home() {
         try {
           const IP_Address = async () => {
             return fetch("https://api.ipify.org/?format=json")
-              .then(res => res.json())
-              .then(data => data.ip);
+              .then((res) => res.json())
+              .then((data) => data.ip);
           };
 
-          const response = await fetch("/api/userInfoByIP/" + (await IP_Address())); // Replace with your actual API endpoint
+          const response = await fetch(
+            "/api/userInfoByIP/" + (await IP_Address())
+          ); // Replace with your actual API endpoint
           const data = await response.json();
           setUserData(data);
         } catch (error) {
@@ -66,7 +68,11 @@ export default function Home() {
     if (!IsBlackListEmpty) {
       if (userData) {
         // check if the user country is in the blackList
-        if (process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES.includes(userData.country)) {
+        if (
+          process.env.NEXT_PUBLIC_BLACKLIST_COUNTRIES?.includes(
+            userData.country
+          )
+        ) {
           // set isBlackListed to true
           setIsBlackListed(true);
         }
@@ -79,11 +85,24 @@ export default function Home() {
     clearInterval(context.sharedState.userdata.timerCookieRef.current);
     if (typeof window !== "undefined") {
       // remove UserDataPuller project EventListeners
-      window.removeEventListener("resize", context.sharedState.userdata.windowSizeTracker.current);
-      window.removeEventListener("mousemove", context.sharedState.userdata.mousePositionTracker.current, false);
+      window.removeEventListener(
+        "resize",
+        context.sharedState.userdata.windowSizeTracker.current
+      );
+      window.removeEventListener(
+        "mousemove",
+        context.sharedState.userdata.mousePositionTracker.current,
+        false
+      );
       // remove Typing project EventListeners
-      window.removeEventListener("resize", context.sharedState.typing.eventInputLostFocus);
-      document.removeEventListener("keydown", context.sharedState.typing.keyboardEvent);
+      window.removeEventListener(
+        "resize",
+        context.sharedState.typing.eventInputLostFocus
+      );
+      document.removeEventListener(
+        "keydown",
+        context.sharedState.typing.keyboardEvent
+      );
     }
     setTimeout(() => {
       setShowElement(true);
@@ -136,17 +155,41 @@ export default function Home() {
 
       {!isBlackListed ? (
         <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
-          {context.sharedState.finishedLoading ? <></> : ShowThisCantBeReached ? <ThisCantBeReached /> : <></>}
-          {context.sharedState.finishedLoading ? <></> : ShowElement ? <Startup /> : <></>}
-          <Header finishedLoading={context.sharedState.finishedLoading} sectionsRef={homeRef} />
+          {context.sharedState.finishedLoading ? (
+            <></>
+          ) : ShowThisCantBeReached ? (
+            <ThisCantBeReached />
+          ) : (
+            <></>
+          )}
+          {context.sharedState.finishedLoading ? (
+            <></>
+          ) : ShowElement ? (
+            <Startup />
+          ) : (
+            <></>
+          )}
+          <Header
+            finishedLoading={context.sharedState.finishedLoading}
+            sectionsRef={homeRef}
+          />
           <MyName finishedLoading={context.sharedState.finishedLoading} />
-          <SocialMediaArround finishedLoading={context.sharedState.finishedLoading} />
-          {context.sharedState.finishedLoading ? <AboutMe ref={aboutRef} /> : <></>}
+          <SocialMediaArround
+            finishedLoading={context.sharedState.finishedLoading}
+          />
+          {context.sharedState.finishedLoading ? (
+            <AboutMe ref={aboutRef} />
+          ) : (
+            <></>
+          )}
           {context.sharedState.finishedLoading ? <WhereIHaveWorked /> : <></>}
           {context.sharedState.finishedLoading ? <SomethingIveBuilt /> : <></>}
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? (
-            <Footer githubUrl={"https://github.com/hktitof/my-website"} hideSocialsInDesktop={true} />
+            <Footer
+              githubUrl={"https://github.com/hktitof/my-website"}
+              hideSocialsInDesktop={true}
+            />
           ) : (
             <></>
           )}
