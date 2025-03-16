@@ -3,14 +3,8 @@ import Img from "../../../components/smallComp/image/Img";
 import ArrowIcon from "../../../components/Icons/ArrowIcon";
 export default function AboutMe(props) {
   const technologies = [
-    [
-      "Nextjs/React",
-      "TypeScript/JavaScript",
-      "Tailwind CSS",
-      "Ether.js/web3.js",
-      "AWS/Google Cloud",
-    ],
-    ["Node.js", "Java", "Solidity", "Mongodb", "GraphQL/RESTful APIs"],
+    ["Nextjs/React", "TypeScript/JavaScript", "Tailwind CSS", "Chakra UI"],
+    ["Node.js", "RESTful APIs", "Builder.io", "Redux"],
   ];
   return (
     <div
@@ -46,38 +40,38 @@ export default function AboutMe(props) {
           <div className="w-full md:w-7/12 space-y-4 sm:text-base text-sm ">
             <div className="font-Header text-justify">
               <span className="text-gray-400 ">
-                Hello! My name is Abdellatif, and I&apos;m a passionate{" "}
+                Hello! My name is Amir, and I&apos;m a passionate{" "}
                 <span className="text-AAsecondary">
-                  Full Stack Software Engineer
-                </span>{" "}
-                with strong problem-solving skills. My journey in computer
-                science started at 11 years old when I explored Ethical Hacking
-                using BackTrack OS, which started my interest in programming.
-                Over the years, I continued to teach myself coding, which led me
-                to pursue an{" "}
-                <span className="text-AAsecondary">engineering degree</span> and
-                afterward a second degree in{" "}
-                <span className="text-AAsecondary">
-                  Master of Computer Science
+                  Full Stack Software Engineer{" "}
                 </span>
-                , making me a professional in this field.
+                with strong problem-solving skills. I hold a degree in{" "}
+                <span className="text-AAsecondary">Information Technology</span>
+                . I graduated and began my career as a React.js developer in
+                2020, which sparked my journey in software development. Over
+                time, I expanded my expertise across various technologies,
+                allowing me to build scalable and efficient full-stack
+                applications.
               </span>
             </div>
             <div className="font-Header text-justify">
               <span className="text-gray-400 ">
-                Throughout my education and career, from my self-learning days
-                to earning my degrees, I&apos;ve gained experience in various
-                industries. I have had the opportunity to work with companies
-                and startups, including{" "}
-                <span className="text-AAsecondary">Vision</span>,{" "}
-                <span className="text-AAsecondary">FeverTokens</span>,{" "}
-                <span className="text-AAsecondary">TrouveTavoi</span>, and many
-                others, including transportation and international companies. At
-                FeverTokens, I led the development of an innovative NFT
-                marketplace, and at Vision, which is the{" "}
-                <span className="text-AAsecondary">second-largest market</span>{" "}
-                in the world for <span className="text-AAsecondary">ENS</span>,
-                I led the development of their new NameWrapper release.
+                Throughout my education and professional journey, from my
+                self-learning beginnings to earning my degree, I have
+                accumulated extensive experience across various industries. I
+                began my career at{" "}
+                <span className="text-AAsecondary">
+                  Codility Solutions Lahore
+                </span>
+                , where I honed my skills in software development. I then joined{" "}
+                <span className="text-AAsecondary">Tkxel</span>, one of
+                Pakistan's leading IT firms, before transitioning to a role as a
+                Software Engineer at{" "}
+                <span className="text-AAsecondary">9t5</span>. Currently, I am
+                working as an independent freelancer, collaborating with{" "}
+                <span className="text-AAsecondary">EventEspresso</span>, a
+                prominent Canadian company. Over the course of my career, I have
+                had the privilege of working on a diverse range of projects,
+                where I developed scalable solutions across multiple domains.
               </span>
             </div>
 

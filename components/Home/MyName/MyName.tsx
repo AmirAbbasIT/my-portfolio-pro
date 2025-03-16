@@ -100,16 +100,12 @@ export default function MyName(props: { finishedLoading: boolean }) {
         <br className="3xl:block hidden" /> With expertise in both{" "}
         <span className="text-AAsecondary">front-end</span> and{" "}
         <span className="text-AAsecondary">back-end development</span>, I work
-        with a diverse range of technologies, including{" "}
-        <span className="text-AAsecondary"> web3</span>
-        <br className="3xl:block hidden" /> and traditional web applications. I
-        enjoy solving challenging projects that drive{" "}
+        with a diverse range of technologies.I I enjoy solving challenging
+        projects that drive{" "}
         <span className="text-AAsecondary"> innovation</span> and deliver
         high-quality results.
         <br className="3xl:block hidden" /> My experience in{" "}
-        <span className="text-AAsecondary">leading development teams</span> has
-        honed my ability to collaborate effectively and translate ideas into
-        functional solutions.
+        <span className="text-AAsecondary">creating scalable solutions</span>
         <br className="3xl:block hidden" /> I am excited to contribute to
         dynamic projects that push the boundaries of technology.
       </motion.h3>
@@ -128,7 +124,12 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="mt-12"
       >
-        <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
+        <a
+          // href={"/resume.pdf"}
+          href={"#"}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
             Check out my resume!
           </button>
