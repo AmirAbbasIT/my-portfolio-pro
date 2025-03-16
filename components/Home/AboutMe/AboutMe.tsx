@@ -64,8 +64,8 @@ export default function AboutMe(props) {
                 </span>
                 , where I honed my skills in software development. I then joined{" "}
                 <span className="text-AAsecondary">Tkxel</span>, one of
-                Pakistan's leading IT firms, before transitioning to a role as a
-                Software Engineer at{" "}
+                Pakistan&apos;s leading IT firms, before transitioning to a role
+                as a Software Engineer at{" "}
                 <span className="text-AAsecondary">9t5</span>. Currently, I am
                 working as an independent freelancer, collaborating with{" "}
                 <span className="text-AAsecondary">EventEspresso</span>, a
