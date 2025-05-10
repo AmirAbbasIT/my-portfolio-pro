@@ -128,7 +128,7 @@ export default function Home() {
   const meta = {
     title: "Amir Abbas - Software Engineer",
     description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
-    image: "/titofCercle.png",
+    // image: "/titofCercle.png", //replace ur image
     type: "website",
   };
   const isProd = process.env.NODE_ENV === "production";
@@ -145,12 +145,12 @@ export default function Home() {
         <meta property="og:site_name" content="Manu Arora" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        {/* <meta property="og:image" content={meta.image} /> unhide when u have image */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@titofabdo" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        {/* <meta name="twitter:image" content={meta.image} /> unhide when u have image  */}
       </Head>
 
       {!isBlackListed ? (
