@@ -36,7 +36,7 @@ export default function Fotter(props: {
           props.hideSocialsInDesktop ? "lg:hidden" : ""
         }`}
       >
-        {IconsData.map((iconData, index) => {
+        {/* {IconsData.map((iconData, index) => {
           return (
             <ClickableIcon
               key={index}
@@ -44,7 +44,7 @@ export default function Fotter(props: {
               Icon={iconData.Icon}
             />
           );
-        })}
+        })} */}
       </div>
       <a href={props.githubUrl} className="" target={"_blank"} rel="noreferrer">
         <div
@@ -53,15 +53,6 @@ export default function Fotter(props: {
         >
           <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
             Built by Amir Abbas
-          </span>
-
-          <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary">
-            <GithubIcon
-              className={
-                "w-4 h-4 text-gray-400 fill-current group-hover:text-AAsecondary"
-              }
-            />
-            <span className="">Source code - Github</span>
           </span>
         </div>
       </a>
