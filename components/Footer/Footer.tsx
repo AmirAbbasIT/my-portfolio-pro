@@ -29,7 +29,7 @@ export default function Fotter(props: {
   hideSocialsInDesktop: boolean;
 }) {
   return (
-    <div className="bg-AAprimary flex flex-col justify-center items-center py-8 space-y-4">
+    <div className="bg-white flex flex-col justify-center items-center py-8 space-y-4">
       {/* // ? Reach me at */}
       <div
         className={`flex flex-row space-x-8 ${
@@ -48,10 +48,10 @@ export default function Fotter(props: {
       </div>
       <a href={props.githubUrl} className="" target={"_blank"} rel="noreferrer">
         <div
-          className="group flex flex-col font-mono justify-center items-center  text-gray-400 
+          className="group flex flex-col font-mono justify-center items-center  text-gray-600 
     text-sm  space-y-2  "
         >
-          <span className="group-hover:text-AAsecondary sm:text-sm text-xs">
+          <span className="group-hover:text-gray-900 sm:text-sm text-xs">
             Built by Amir Abbas
           </span>
         </div>

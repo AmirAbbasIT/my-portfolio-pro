@@ -17,7 +17,7 @@ const IconClickableWithAnimation = (props) => {
       <a href={props.href} className="" target={"_blank"} rel="noreferrer">
         <props.Icon
           className={
-            "w-6 h-6 text-gray-400 hover:text-AAsecondary fill-current hover:cursor-pointer"
+            "w-6 h-6 text-gray-500 hover:text-sky-600 fill-current hover:cursor-pointer"
           }
         />
       </a>
@@ -58,7 +58,7 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
               href={"https://www.youtube.com/@abdellatif_anaflous"}
             /> */}
           </div>
-          <div className="h-28 w-0.5 bg-gray-400"></div>
+          <div className="h-28 w-0.5 bg-gray-500"></div>
         </div>
       </motion.div>
 
@@ -90,14 +90,14 @@ export default function SocialMediaEmail(props: { finishedLoading: boolean }) {
               target={"_blank"}
               rel="noreferrer"
             >
-              <span className=" font-Header tracking-wider text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
-                amirabbasit786<span className="text-AAsecondary">@</span>gmail
-                <span className="text-AAsecondary">.</span>com
+              <span className=" font-Header tracking-wider text-gray-500 hover:text-sky-600 hover:cursor-pointer">
+                amirabbasit786<span className="text-sky-600">@</span>gmail
+                <span className="text-sky-600">.</span>com
               </span>
             </a>
           </motion.div>
 
-          <div className="h-24 w-0.5 bg-gray-400"></div>
+          <div className="h-24 w-0.5 bg-gray-500"></div>
         </div>
       </motion.div>
     </>

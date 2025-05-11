@@ -26,21 +26,21 @@ export default function WhereIHaveWorked() {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col items-center justify-center py-24 space-y-12 bg-AAprimary"
+      className="flex flex-col items-center justify-center py-24 space-y-12 bg-white"
     >
       {/* // ? Title "Where I've Worked" */}
       <section className="flex flex-row items-center">
         <div className="flex flex-row items-center">
           <ArrowIcon
-            className={"flex-none h-4 md:h-6 w-4 md:w-5 text-AAsecondary"}
+            className={"flex-none h-4 md:h-6 w-4 md:w-5 text-sky-600"}
           />
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl">
+          <span className="text-sky-600 font-sans text-sm  sm:text-xl">
             {" "}
             02.
           </span>
         </div>
 
-        <span className="text-gray-200 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
+        <span className="text-gray-700 opacity-85 font-bold tracking-wider text-lg md:text-2xl px-3">
           Where I&apos;ve Worked
         </span>
         <div className="bg-gray-400 h-[0.2px] w-16 sm:w-44 md:w-80"></div>
@@ -84,15 +84,15 @@ const CompaniesBar = (props) => {
             props.CompanyNameBackgroundColorGreen
           );
         }}
-        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-AAsecondary
-             hover:bg-ResumeButtonHover rounded  font-mono  
+        className={`flex-none sm:text-sm text-xs text-center md:text-left  hover:text-white
+             hover:bg-sky-600 rounded  font-mono  
              py-3 md:pl-6 md:px-4 md:w-44 w-32 duration-500
              ${
                companyNameBackgroundColorGreen[
                  props.ButtonOrderOfcompanyNameBackgroundColorGreen
                ]
-                 ? "bg-ResumeButtonHover text-AAsecondary"
-                 : "text-gray-500"
+                 ? "bg-sky-600 text-white"
+                 : "text-gray-700"
              }`}
       >
         {props.CompanyName}

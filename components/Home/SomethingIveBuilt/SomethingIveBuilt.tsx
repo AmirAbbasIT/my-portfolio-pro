@@ -11,22 +11,22 @@ export default function SomethingIveBuilt() {
   return (
     <div
       id="SomethingIveBuiltSection"
-      className=" flex flex-col xl:space-y-28 space-y-12 bg-AAprimary w-full  
+      className=" flex flex-col xl:space-y-28 space-y-12 bg-white w-full  
      2xl:px-72 lg:px-24 md:px-16 sm:px-16 py-32 px-4"
     >
       {/* // ? Title   */}
       <div data-aos="fade-up" className=" flex flex-row  items-center md:px-0">
         <ArrowIcon
           className={
-            "flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-AAsecondary"
+            "flex-none h-5 md:h-6 w-5 md:w-5 translate-y-[2px] text-sky-600"
           }
         />
         <div className="flex-none flex-row space-x-2 items-center pr-2">
-          <span className="text-AAsecondary font-sans text-sm  sm:text-xl">
+          <span className="text-sky-600 font-sans text-sm  sm:text-xl">
             {" "}
             03.
           </span>
-          <span className=" font-bold tracking-wider text-gray-200 text-lg md:text-2xl w-44 md:w-56 opacity-85">
+          <span className=" font-bold tracking-wider text-gray-700 text-lg md:text-2xl w-44 md:w-56 opacity-85">
             {" "}
             Some Things I&apos;ve Built
           </span>
@@ -43,7 +43,7 @@ export default function SomethingIveBuilt() {
         >
           {/* Left image */}
           <div
-            className="hidden bg-AAprimary z-10  py-4 
+            className="hidden bg-white z-10  py-4 
           absolute md:grid grid-cols-12 w-full h-full  content-center "
           >
             <div className="relative rounded w-full h-full col-start-6 col-span-7 ">
@@ -53,7 +53,7 @@ export default function SomethingIveBuilt() {
                 rel="noreferrer"
               >
                 <div
-                  className="absolute w-full h-full rounded bg-AAprimary 
+                  className="absolute w-full h-full rounded bg-white 
            transition-opacity opacity-50 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </a>
@@ -70,8 +70,8 @@ export default function SomethingIveBuilt() {
             {/* background for text in mobile responsive */}
             <div className="absolute w-full h-full bg-opacity-70 z-0 md:order-2">
               <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
+                <div className="absolute w-full h-full bg-sky-600 opacity-10 z-10"></div>
+                <div className="absolute w-full h-full bg-white opacity-80 z-10"></div>
                 <Img
                   src={"/projects/waus.png"}
                   alt={"Project Screen shot"}
@@ -85,34 +85,34 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start  space-y-3 md:order-1"
             >
               <div className="flex flex-col space-y-1  z-10">
-                <span className="text-AAsecondary text-base">9T5</span>
+                <span className="text-sky-600 text-base">9T5</span>
                 <a
                   href="https://workinaus.com.au/home"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                  <span className=" md:text-gray-700 text-sky-600 font-bold text-xl hover:cursor-pointer">
                     WorkinAUS
                   </span>
                 </a>
               </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6 z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left md:text-left">
-                  At <span className="text-AAsecondary">workinAUS</span>, I
-                  worked as a full-stack developer responsible for building and
+              <div className="w-full md:bg-gray-200 rounded-md py-6 md:p-6 z-10">
+                <p className="text-gray-800 md:text-gray-800 text-left md:text-left">
+                  At <span className="text-sky-600">workinAUS</span>, I worked
+                  as a full-stack developer responsible for building and
                   maintaining both the job seeker and employer portals. I
                   developed the entire seeker-side platform using{" "}
-                  <span className="text-AAsecondary">Next.js</span> with the
-                  Page Router, and contributed key features to the employer-side
-                  built with <span className="text-AAsecondary">React.js</span>.
-                  The platform enabled Australian users to search and apply for
+                  <span className="text-sky-600">Next.js</span> with the Page
+                  Router, and contributed key features to the employer-side
+                  built with <span className="text-sky-600">React.js</span>. The
+                  platform enabled Australian users to search and apply for
                   jobs, while also offering features like employer-specific job
                   listings, a teleprompter tool for video intros, and an
                   intuitive job search experience—built with scalability,
                   performance, SEO, and user-friendliness in mind.
                 </p>
               </div>
-              <ul className="flex flex-wrap w-full text-gray-300 md:text-gray-400 text-sm font-Text2 md:justify-start">
+              <ul className="flex flex-wrap w-full text-gray-600 md:text-gray-600 text-sm font-Text2 md:justify-start">
                 <span className="pr-4 z-10">Next.js</span>
                 <span className="pr-4 z-10">React.js</span>
                 <span className="pr-4 z-10">Tailwind CSS</span>
@@ -141,14 +141,14 @@ export default function SomethingIveBuilt() {
         >
           {/* Left image */}
           <div
-            className="hidden bg-AAprimary z-10  py-4 
+            className="hidden bg-white z-10  py-4 
           absolute md:grid grid-cols-12 w-full h-full  content-center"
           >
             <div className="relative rounded w-full h-full col-span-7 ">
               {/* <Link href={"/typing"}>
                 <div
                   // onClick={}
-                  className="absolute w-full h-full rounded bg-AAsecondary 
+                  className="absolute w-full h-full rounded bg-sky-600 
            transition-opacity opacity-20 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </Link> */}
@@ -156,7 +156,7 @@ export default function SomethingIveBuilt() {
               <a href="https://codility.co/" target={"_blank"} rel="noreferrer">
                 <div
                   // onClick={}
-                  className="absolute w-full h-full rounded bg-AAprimary 
+                  className="absolute w-full h-full rounded bg-white 
            transition-opacity opacity-30 hover:opacity-0 hover:cursor-pointer duration-300"
                 ></div>
               </a>
@@ -174,8 +174,8 @@ export default function SomethingIveBuilt() {
             {/* background for text in mobile responsive */}
             <div className="absolute w-full h-full bg-opacity-70 z-0">
               <div className="relative w-full h-full">
-                <div className="absolute w-full h-full bg-AAsecondary opacity-10 z-10"></div>
-                <div className="absolute w-full h-full bg-AAprimary opacity-80 z-10"></div>
+                <div className="absolute w-full h-full bg-sky-600 opacity-10 z-10"></div>
+                <div className="absolute w-full h-full bg-white opacity-80 z-10"></div>
                 <Img
                   src={"/projects/erp.png"}
                   alt={"Project Screen shot"}
@@ -189,7 +189,7 @@ export default function SomethingIveBuilt() {
             col-span-8 flex flex-col items-start md:items-end space-y-3"
             >
               <div className="flex flex-col space-y-1 md:items-end z-10">
-                <span className="text-AAsecondary text-base">
+                <span className="text-sky-600 text-base">
                   Codility Solutions
                 </span>
                 <a
@@ -197,31 +197,31 @@ export default function SomethingIveBuilt() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className=" md:text-gray-200 text-AAsecondary font-bold text-xl hover:cursor-pointer">
+                  <span className=" md:text-gray-700 text-sky-600 font-bold text-xl hover:cursor-pointer">
                     ERP Pack
                   </span>
                 </a>
               </div>
-              <div className="w-full md:bg-AAtertiary rounded-md py-6 md:p-6 z-10">
-                <p className="text-gray-300 md:text-gray-400 text-left">
+              <div className="w-full md:bg-gray-200 rounded-md py-6 md:p-6 z-10">
+                <p className="text-gray-800 md:text-gray-4800 text-left">
                   I contributed to the development of a complete, modular{" "}
-                  <span className="text-AAsecondary">ERP Pack</span> solution
+                  <span className="text-sky-600">ERP Pack</span> solution
                   tailored for business operations. The platform included robust
                   modules such as{" "}
-                  <span className="text-AAsecondary">Attendance</span>,{" "}
-                  <span className="text-AAsecondary">Leaves</span>,{" "}
-                  <span className="text-AAsecondary">Employee Management</span>,{" "}
-                  <span className="text-AAsecondary">Accounting</span>,{" "}
-                  <span className="text-AAsecondary">Payroll</span>, and more. I
-                  was responsible for building scalable UI components, managing
-                  API integrations, and ensuring smooth functionality across
+                  <span className="text-sky-600">Attendance</span>,{" "}
+                  <span className="text-sky-600">Leaves</span>,{" "}
+                  <span className="text-sky-600">Employee Management</span>,{" "}
+                  <span className="text-sky-600">Accounting</span>,{" "}
+                  <span className="text-sky-600">Payroll</span>, and more. I was
+                  responsible for building scalable UI components, managing API
+                  integrations, and ensuring smooth functionality across
                   features like{" "}
-                  <span className="text-AAsecondary">multi-language</span> and{" "}
-                  <span className="text-AAsecondary">time zone</span> support.
+                  <span className="text-sky-600">multi-language</span> and{" "}
+                  <span className="text-sky-600">time zone</span> support.
                 </p>
               </div>
               <ul
-                className="flex flex-wrap w-full text-gray-300 md:text-gray-400
+                className="flex flex-wrap w-full text-gray-600 md:text-gray-600
   text-sm font-Text2 md:justify-end"
               >
                 <span className="pr-4 z-10">React</span>

@@ -142,7 +142,7 @@ export default function Home() {
       </Head>
 
       {!isBlackListed ? (
-        <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
+        <div className="relative snap-mandatory min-h-screen bg-white w-full ">
           {context.sharedState.finishedLoading ? (
             <></>
           ) : ShowThisCantBeReached ? (

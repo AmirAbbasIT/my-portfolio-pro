@@ -22,7 +22,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
-        className="text-AAsecondary font-mono"
+        className="text-sky-600 font-mono"
       >
         Hi, my name is
       </motion.span>
@@ -39,7 +39,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
-        className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
+        className="text-gray-500 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
         Amir Abbas.
       </motion.h1>
@@ -56,7 +56,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
-        className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
+        className="text-gray-7  00 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
         I turn ideas into reality.
       </motion.h2>
@@ -70,11 +70,11 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        I&apos;m a <span className="text-AAsecondary">software engineer</span>, with strong problem-solving skills. I
+        I&apos;m a <span className="text-sky-600">software engineer</span>, with strong problem-solving skills. I
         specialize in building great digital experiences, <br className="2xl:block hidden" />
-        both in <span className="text-AAsecondary">front-end</span> and{" "}
-        <span className="text-AAsecondary">back-end</span> development. I work with different technologies, including
-        <span className="text-AAsecondary"> web3</span> and regular <br className="2xl:block hidden" /> web
+        both in <span className="text-sky-600">front-end</span> and{" "}
+        <span className="text-sky-600">back-end</span> development. I work with different technologies, including
+        <span className="text-sky-600"> web3</span> and regular <br className="2xl:block hidden" /> web
         applications. I enjoy working on projects that bring new ideas and high-quality results.
       </motion.h3> */}
       <motion.h3
@@ -90,22 +90,20 @@ export default function MyName(props: { finishedLoading: boolean }) {
             duration: props.finishedLoading ? 0 : 0.2,
           },
         }}
-        className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider "
+        className="text-gray-600 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider "
       >
         I&apos;m a{" "}
-        <span className="text-AAsecondary">Full Stack Software Engineer</span>{" "}
-        with strong{" "}
-        <span className="text-AAsecondary">problem-solving skills</span>,
+        <span className="text-sky-600">Full Stack Software Engineer</span> with
+        strong <span className="text-sky-600">problem-solving skills</span>,
         specializing in creating exceptional digital experiences.
         <br className="3xl:block hidden" /> With expertise in both{" "}
-        <span className="text-AAsecondary">front-end</span> and{" "}
-        <span className="text-AAsecondary">back-end development</span>, I work
-        with a diverse range of technologies.I I enjoy solving challenging
-        projects that drive{" "}
-        <span className="text-AAsecondary"> innovation</span> and deliver
+        <span className="text-sky-600">front-end</span> and{" "}
+        <span className="text-sky-600">back-end development</span>, I work with
+        a diverse range of technologies.I I enjoy solving challenging projects
+        that drive <span className="text-sky-600"> innovation</span> and deliver
         high-quality results.
         <br className="3xl:block hidden" /> My experience in{" "}
-        <span className="text-AAsecondary">creating scalable solutions</span>
+        <span className="text-sky-600">creating scalable solutions</span>
         <br className="3xl:block hidden" /> I am excited to contribute to
         dynamic projects that push the boundaries of technology.
       </motion.h3>
@@ -130,7 +128,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           target={"_blank"}
           rel="noreferrer"
         >
-          <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
+          <button className="bg-white text-sky-600 border rounded px-4 sm:px-8 py-3 sm:py-4 border-sky-600">
             Check out my resume!
           </button>
         </a>
