@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import Startup from "../components/Header/StartupLogo/Startup";
+// import Startup from "../components/Header/StartupLogo/Startup";
 import MyName from "../components/Home/MyName/MyName";
 import { useContext, useEffect, useState, useRef } from "react";
 import SocialMediaArround from "../components/Home/SocialMediaArround/SocialMediaArround";
@@ -16,9 +16,7 @@ import Head from "next/head";
 import ScreenSizeDetector from "../components/CustomComponents/ScreenSizeDetector";
 import Maintenance from "../components/Home/Maintenance/Maintenance";
 export default function Home() {
-  const [ShowElement, setShowElement] = useState(false);
   const [ShowThisCantBeReached, setShowThisCantBeReached] = useState(true);
-  const [ShowMe, setShowMe] = useState(false);
   // context Variable to clearInterval
   const context = useContext(AppContext);
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -105,26 +103,16 @@ export default function Home() {
       );
     }
     setTimeout(() => {
-      setShowElement(true);
-    }, 4500);
-
-    setTimeout(() => {
-      setShowThisCantBeReached(false);
-    }, 5400);
-    // ? INFORMATIONAL next function will show the component after changing the state of ShowMe
-    setTimeout(() => {
-      setShowElement(false);
-      setShowMe(true);
       context.sharedState.finishedLoading = true;
       context.setSharedState(context.sharedState);
-    }, 10400);
+      setShowThisCantBeReached(false);
+    }, 4500);
   }, [context, context.sharedState]);
 
   useEffect(() => {
     Aos.init({ duration: 2000, once: true });
   }, []);
 
-  console.log("website is rendering...");
   const meta = {
     title: "Amir Abbas - Software Engineer",
     description: `I've been working on Software development for 5 years straight. Get in touch with me to know more.`,
@@ -146,10 +134,10 @@ export default function Home() {
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         {/* <meta property="og:image" content={meta.image} /> unhide when u have image */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@titofabdo" />
         <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:description" content={meta.description} /> */}
         {/* <meta name="twitter:image" content={meta.image} /> unhide when u have image  */}
       </Head>
 
@@ -162,13 +150,13 @@ export default function Home() {
           ) : (
             <></>
           )}
-          {context.sharedState.finishedLoading ? (
+          {/* {context.sharedState.finishedLoading ? (  /// startup animation is hidden modify if you want in future
             <></>
           ) : ShowElement ? (
             <Startup />
           ) : (
             <></>
-          )}
+          )} */}
           <Header
             finishedLoading={context.sharedState.finishedLoading}
             sectionsRef={homeRef}
