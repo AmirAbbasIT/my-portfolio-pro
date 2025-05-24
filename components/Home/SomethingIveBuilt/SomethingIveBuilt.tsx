@@ -104,8 +104,8 @@ export default function SomethingIveBuilt() {
       </div>
 
       <div className="flex flex-col   xl:space-y-36 space-y-8 md:space-y-28">
-        {projects.map((project) => (
-          <div data-aos="fade-up">
+        {projects.map((project, index) => (
+          <div key={index} data-aos="fade-up">
             <div className="relative md:grid md:grid-cols-12 w-full md:h-96  ">
               {/* Left image */}
               <div
@@ -152,8 +152,10 @@ export default function SomethingIveBuilt() {
                     dangerouslySetInnerHTML={{ __html: project.description }}
                   ></div>
                   <ul className="flex flex-wrap w-full text-gray-600 md:text-gray-600 text-sm font-Text2 md:justify-start">
-                    {project.skills.map((skill) => (
-                      <span className="pr-4 z-10">{skill}</span>
+                    {project.skills.map((skill, index) => (
+                      <span key={index} className="pr-4 z-10">
+                        {skill}
+                      </span>
                     ))}
                   </ul>
                   <div className="z-10 flex fle-row space-x-5 ">
