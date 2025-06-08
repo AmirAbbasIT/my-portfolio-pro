@@ -29,30 +29,31 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
 
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-70 m-0"
+      className="fixed inset-0 flex justify-center items-center z-50 bg-white bg-opacity-70 m-0"
       style={{ margin: "0px" }}
     >
       {/* Modal Content */}
-      <div className="relative w-full bg-gray-800 rounded-lg mx-4 sm:mx-10 md:mx-20">
+      <div className="relative flex flex-col w-full rounded-lg mx-4 sm:mx-10 md:mx-20 shadow-xl">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-0 right-0 text-black text-3xl font-bold p-2 bg-cyan-300"
+          className="absolute top-0 right-0 text-black text-3xl font-bold p-2 bg-cyan-300 rounded-md bg-white bg-opacity-80"
         >
           &times;
         </button>
 
         {/* Image Display */}
-        <div className="flex justify-center items-center py-4">
+        <div className="flex justify-center items-center">
           <Img
             src={gallery[currentIndex]}
             alt={`Project Screenshot ${currentIndex + 1}`}
             className="max-w-full max-h-full object-contain rounded-lg"
+            height={"250px"}
           />
         </div>
 
         {/* Navigation Controls */}
-        <div className="absolute left-0 right-0 bottom-4 flex justify-between px-8">
+        {/* <div className="absolute left-0 right-0 bottom-4 flex justify-between px-8">
           <button
             onClick={goToPrev}
             className="text-white text-4xl font-bold"
@@ -67,16 +68,18 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
           >
             &#10095;
           </button>
-        </div>
+        </div> */}
 
         {/* Bottom Strip (Thumbnail) */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gray-700 p-2">
-          <div className="flex justify-center space-x-4 overflow-x-auto">
+        <div className="px-2 py-4 bg-white">
+          <div className="flex justify-center space-x-4 overflow-x-auto ">
             {gallery.map((image, index) => (
               <div
                 key={index}
                 className={`w-16 h-12 relative cursor-pointer ${
-                  index === currentIndex ? "border-2 border-sky-600" : ""
+                  index === currentIndex
+                    ? "border-2 border-orange-600 rounded"
+                    : ""
                 }`}
                 onClick={() => setCurrentIndex(index)}
               >
