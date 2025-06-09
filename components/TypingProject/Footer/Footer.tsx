@@ -23,7 +23,10 @@ export default function Fotter(props: { link: string; className: string }) {
     >
       {/* // ? Reach me at */}
       <div className="flex flex-row space-x-8">
-        <ClickableIcon href={"https://github.com/hktitof"} Icon={GithubIcon} />
+        <ClickableIcon
+          href={"https://github.com/AmirAbbasIT"}
+          Icon={GithubIcon}
+        />
         <ClickableIcon
           href={"https://www.linkedin.com/in/abdellatif-anaflous/"}
           Icon={LinkedinIcon}

@@ -104,20 +104,16 @@ const projects = [
       "Redux",
     ],
     description: `<p className="text-gray-800 md:text-gray-4800 text-left">
-    I had the opportunity to contribute to the development of the <span className="text-sky-600">Hotel Management PWA App</span>, 
-    a powerful cross-platform application that empowers users to effortlessly book hotels for their travels and engage in dynamic service negotiations. 
-    This Progressive Web App is designed for seamless experiences on <span className="text-sky-600">Android</span>, <span className="text-sky-600">iOS</span>, and <span className="text-sky-600">Web</span> devices, providing users with an intuitive interface for finding the perfect accommodation.
-    <br /><br />
-    The app features two core modules:
-    <ul className="list-disc pl-5">
-      <li><span className="text-sky-600">Users</span>: Travelers can post future reservation requests, where they can negotiate with hotels to find the best deal.</li>
-      <li><span className="text-sky-600">Clients (Hotels)</span>: Hotels can apply to users' posts, showcasing their best services and securing reservations based on the users' preferences.</li>
-    </ul>
-    <br />
-    In this project, I was deeply involved in building the responsive front-end using <span className="text-sky-600">React.js</span> and <span className="text-sky-600">Cordova</span>, 
-    ensuring a fluid and consistent experience across devices. I worked on optimizing API integrations and implementing <span className="text-sky-600">Redux</span> for state management to handle user interactions seamlessly. 
-    The result is an app that allows users to book stays with ease and hotels to respond directly to user needs, revolutionizing the way people plan and book their travels.
-  </p>`,
+  I contributed to the development of the <span className="text-sky-600">Hotel Management PWA App</span>, 
+  a cross-platform solution that allows users to effortlessly book hotels and negotiate services. Available on <span className="text-sky-600">Android</span>, 
+  <span className="text-sky-600">iOS</span>, and <span className="text-sky-600">Web</span>, the app features two main modules:
+  <ul className="list-disc pl-5">
+    <li><span className="text-sky-600">Users</span>: Post reservation requests and negotiate with hotels.</li>
+    <li><span className="text-sky-600">Clients (Hotels)</span>: Respond to user posts and secure bookings.</li>
+  </ul>
+  I worked on the front-end using <span className="text-sky-600">React.js</span> and <span className="text-sky-600">Cordova</span>, 
+  ensuring smooth performance across platforms, and implemented <span className="text-sky-600">Redux</span> for state management and API integrations.
+</p>`,
   },
 ];
 export default function SomethingIveBuilt() {

@@ -349,7 +349,7 @@ export default function Home() {
           </main>
           <Footer
             className="absolute bottom-0"
-            link="https://github.com/hktitof/Typing"
+            link="https://github.com/AmirAbbasIT"
           />
         </>
       )}

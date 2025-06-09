@@ -127,10 +127,10 @@ export default function Home() {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta property="og:url" content={`https://anaflous.com`} />
-        <link rel="canonical" href={`https://anaflous.com`} />
+        <meta property="og:url" content={`https://amirabbas.dev`} />
+        <link rel="canonical" href={`https://amirabbas.dev`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Amir Abbas" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         {/* <meta property="og:image" content={meta.image} /> unhide when u have image */}
@@ -150,13 +150,6 @@ export default function Home() {
           ) : (
             <></>
           )}
-          {/* {context.sharedState.finishedLoading ? (  /// startup animation is hidden modify if you want in future
-            <></>
-          ) : ShowElement ? (
-            <Startup />
-          ) : (
-            <></>
-          )} */}
           <Header
             finishedLoading={context.sharedState.finishedLoading}
             sectionsRef={homeRef}
@@ -175,7 +168,7 @@ export default function Home() {
           {context.sharedState.finishedLoading ? <GetInTouch /> : <></>}
           {context.sharedState.finishedLoading ? (
             <Footer
-              githubUrl={"https://github.com/hktitof/my-website"}
+              githubUrl={"https://github.com/AmirAbbasIT"}
               hideSocialsInDesktop={true}
             />
           ) : (
