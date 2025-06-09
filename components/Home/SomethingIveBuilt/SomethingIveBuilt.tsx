@@ -105,7 +105,7 @@ const projects = [
     ],
     description: `<p className="text-gray-800 md:text-gray-4800 text-left">
   I contributed to the development of the <span className="text-sky-600">Hotel Management PWA App</span>, 
-  a cross-platform solution that allows users to effortlessly book hotels and negotiate services. Available on <span className="text-sky-600">Android</span>, 
+  a cross-platform solution that allows users to effortlessly book hotels and negotiate services. Developed for <span className="text-sky-600">Android</span>, 
   <span className="text-sky-600">iOS</span>, and <span className="text-sky-600">Web</span>, the app features two main modules:
   <ul className="list-disc pl-5">
     <li><span className="text-sky-600">Users</span>: Post reservation requests and negotiate with hotels.</li>
