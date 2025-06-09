@@ -72,11 +72,17 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
 
         {/* Bottom Strip (Thumbnail) */}
         <div className="px-2 py-4 bg-white">
-          <div className="flex justify-center space-x-4 overflow-x-auto ">
+          <div
+            className={`flex space-x-4 ${
+              gallery.length > 4
+                ? "overflow-x-auto whitespace-nowrap"
+                : "justify-center"
+            }`}
+          >
             {gallery.map((image, index) => (
               <div
                 key={index}
-                className={`w-16 h-12 relative cursor-pointer ${
+                className={`min-w-16 h-12 cursor-pointer ${
                   index === currentIndex
                     ? "border-2 border-orange-600 rounded"
                     : ""
@@ -86,7 +92,7 @@ const FullscreenGallery: React.FC<FullscreenGalleryProps> = ({
                 <Img
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  className="w-full h-full rounded-lg object-cover"
+                  className="w-full h-10 rounded-sm object-cover" // Fixed width and height for thumbnails
                 />
               </div>
             ))}

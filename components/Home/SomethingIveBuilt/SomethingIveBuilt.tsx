@@ -46,7 +46,19 @@ const projects = [
     imageUrl: "/projects/erp.png",
     project: "ERP Pack",
     link: "https://codility.co/",
-    gallery: ["/projects/erp.png", "/projects/erp.png", "/projects/erp.png"],
+    gallery: [
+      "/projects/erp/erp1.png",
+      "/projects/erp/erp2.png",
+      "/projects/erp/erp3.png",
+      "/projects/erp/erp4.png",
+      "/projects/erp/erp5.png",
+      "/projects/erp/erp6.png",
+      "/projects/erp/erp7.png",
+      "/projects/erp/erp8.png",
+      "/projects/erp/erp9.png",
+      "/projects/erp/erp10.png",
+      "/projects/erp/erp12.png",
+    ],
     skills: ["React", "Redux", "TypeScript", "API Integration"],
     description: `<p className="text-gray-800 md:text-gray-4800 text-left">
                   I contributed to the development of a complete, modular 
@@ -172,27 +184,30 @@ export default function SomethingIveBuilt() {
                 Gallery
               </span>
               <div className="grid grid-cols-2 gap-4">
-                {project.gallery.map((image, index) => (
-                  <div
-                    key={index}
-                    className="relative flex justify-center cursor-pointer"
-                    onClick={() => openFullscreen(project.gallery)}
-                  >
-                    {/* Image with Overlay */}
-                    <Img
-                      src={image}
-                      alt={`Project Screenshot ${index + 1}`}
-                      className="w-48 h-32 rounded-lg object-cover transition-opacity duration-300 ease-in-out"
-                    />
+                {Array.from({ length: 4 }).map((_, index) => {
+                  const image = project.gallery[index % project.gallery.length];
+                  return (
+                    <div
+                      key={index}
+                      className="relative flex justify-center cursor-pointer"
+                      onClick={() => openFullscreen(project.gallery)}
+                    >
+                      {/* Image with Overlay */}
+                      <Img
+                        src={image}
+                        alt={`Project Screenshot ${index + 1}`}
+                        className="w-48 h-32 rounded-lg object-cover transition-opacity duration-300 ease-in-out"
+                      />
 
-                    {/* Faded overlay */}
-                    <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100">
-                      <span className="text-white text-lg font-semibold">
-                        Click to View Gallery
-                      </span>
+                      {/* Faded overlay */}
+                      <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex justify-center items-center transition-opacity duration-300 ease-in-out opacity-0 hover:opacity-100">
+                        <span className="text-white text-lg font-semibold">
+                          Click to View Gallery
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
