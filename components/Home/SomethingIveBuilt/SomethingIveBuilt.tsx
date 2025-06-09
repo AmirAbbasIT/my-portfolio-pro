@@ -77,6 +77,48 @@ const projects = [
                   <span className="text-sky-600">time zone</span> support.
                 </p>`,
   },
+  {
+    company: "Codility Solutions",
+    imageUrl: "/projects/pwa/pwa1.png",
+    project: "Hotel Management PWA App",
+    // link: "https://codility.co/",
+    gallery: [
+      "/projects/pwa/pwa1.png",
+      "/projects/pwa/pwa2.png",
+      "/projects/pwa/pwa3.png",
+      "/projects/pwa/pwa4.png",
+      "/projects/pwa/pwa5.png",
+      "/projects/pwa/pwa6.png",
+      "/projects/pwa/pwa7.png",
+      "/projects/pwa/pwa8.png",
+      "/projects/pwa/pwa9.png",
+      "/projects/pwa/pwa10.png",
+    ],
+    skills: [
+      "React",
+      "Cordova",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "API Integration",
+      "Redux",
+    ],
+    description: `<p className="text-gray-800 md:text-gray-4800 text-left">
+    I had the opportunity to contribute to the development of the <span className="text-sky-600">Hotel Management PWA App</span>, 
+    a powerful cross-platform application that empowers users to effortlessly book hotels for their travels and engage in dynamic service negotiations. 
+    This Progressive Web App is designed for seamless experiences on <span className="text-sky-600">Android</span>, <span className="text-sky-600">iOS</span>, and <span className="text-sky-600">Web</span> devices, providing users with an intuitive interface for finding the perfect accommodation.
+    <br /><br />
+    The app features two core modules:
+    <ul className="list-disc pl-5">
+      <li><span className="text-sky-600">Users</span>: Travelers can post future reservation requests, where they can negotiate with hotels to find the best deal.</li>
+      <li><span className="text-sky-600">Clients (Hotels)</span>: Hotels can apply to users' posts, showcasing their best services and securing reservations based on the users' preferences.</li>
+    </ul>
+    <br />
+    In this project, I was deeply involved in building the responsive front-end using <span className="text-sky-600">React.js</span> and <span className="text-sky-600">Cordova</span>, 
+    ensuring a fluid and consistent experience across devices. I worked on optimizing API integrations and implementing <span className="text-sky-600">Redux</span> for state management to handle user interactions seamlessly. 
+    The result is an app that allows users to book stays with ease and hotels to respond directly to user needs, revolutionizing the way people plan and book their travels.
+  </p>`,
+  },
 ];
 export default function SomethingIveBuilt() {
   const router = useRouter();
@@ -170,18 +212,20 @@ export default function SomethingIveBuilt() {
                       </span>
                     ))}
                   </ul>
-                  <div className="z-10 flex fle-row space-x-5 ">
-                    <a href={project.link} target={"_blank"} rel="noreferrer">
-                      <ExternalLink url={""} router={router} />
-                    </a>
-                  </div>
+                  {project.link && (
+                    <div className="z-10 flex fle-row space-x-5 ">
+                      <a href={project.link} target={"_blank"} rel="noreferrer">
+                        <ExternalLink url={""} router={router} />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
             {/* Thumbnails Grid */}
-            <div className="flex flex-col items-center mt-8 mx-16">
+            <div className="flex flex-col items-center mt-2 mx-16">
               <span className=" md:text-gray-700 text-sky-600 font-bold text-xl hover:cursor-pointer">
-                Gallery
+                Project Gallery
               </span>
               <div className="grid grid-cols-2 gap-4">
                 {Array.from({ length: 4 }).map((_, index) => {
