@@ -10,14 +10,16 @@ import FullscreenGallery from "./FullscreenGallery";
 const projects = [
   {
     company: "9T5",
-    imageUrl: "/projects/waus.png",
+    imageUrl: "/projects/wia/wia1.png",
     project: "WorkinAUS",
     link: "https://workinaus.com.au/home",
     gallery: [
-      "/projects/waus.png",
-      "/projects/waus.png",
-      "/projects/waus.png",
-      "/projects/waus.png",
+      "/projects/wia/wia1.png",
+      "/projects/wia/wia2.png",
+      "/projects/wia/wia3.png",
+      "/projects/wia/wia4.png",
+      "/projects/wia/wia5.png",
+      "/projects/wia/wia6.png",
     ],
     skills: [
       "Next.js",
