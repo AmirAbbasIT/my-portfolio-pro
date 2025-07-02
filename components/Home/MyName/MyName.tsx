@@ -122,7 +122,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
         }}
         className="mt-12"
       >
-        <a
+        {/* <a
           // href={"/resume.pdf"}
           href={"#"}
           target={"_blank"}
@@ -131,7 +131,7 @@ export default function MyName(props: { finishedLoading: boolean }) {
           <button className="bg-white text-sky-600 border rounded px-4 sm:px-8 py-3 sm:py-4 border-sky-600">
             Check out my resume!
           </button>
-        </a>
+        </a> */}
       </motion.div>
     </div>
   );

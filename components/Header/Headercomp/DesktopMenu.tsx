@@ -122,7 +122,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         </ReactScrollLink>
       </motion.span>
       {/* <a href={"#"} target={"_blank"} rel="noreferrer"> */}
-      <motion.button
+      {/* <motion.button
         initial={{
           y: -40,
           opacity: 0,
@@ -140,7 +140,7 @@ export default function DesktopMenu(props: { finishedLoading: boolean }) {
         className="text-sky-600 border border-spacing-2 py-2 px-3 rounded-sm border-sky-600 hover:bg-sky-600 hover:text-white"
       >
         Resume
-      </motion.button>
+      </motion.button> */}
       {/* </a> */}
     </div>
   );
