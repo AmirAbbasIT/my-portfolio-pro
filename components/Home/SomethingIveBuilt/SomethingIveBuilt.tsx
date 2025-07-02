@@ -28,20 +28,19 @@ const projects = [
       "Redux (easy-peasy)",
       "JavaScript",
     ],
-    description: ` <p className="text-gray-800 md:text-gray-800 text-left md:text-left">
-                  At <span className="text-sky-600">workinAUS</span>, I worked
-                  as a full-stack developer responsible for building and
-                  maintaining both the job seeker and employer portals. I
-                  developed the entire seeker-side platform using 
-                  <span className="text-sky-600">Next.js</span> with the Page
-                  Router, and contributed key features to the employer-side
-                  built with <span className="text-sky-600">React.js</span>. The
-                  platform enabled Australian users to search and apply for
-                  jobs, while also offering features like employer-specific job
-                  listings, a teleprompter tool for video intros, and an
-                  intuitive job search experience—built with scalability,
-                  performance, SEO, and user-friendliness in mind.
-                </p>`,
+    description: `<p className="text-gray-800 md:text-gray-800 text-left md:text-left">
+    At <span className="text-sky-600">workinAUS</span>, I worked
+    as a front-end developer focused on building and refining the
+    user interfaces for both the job seeker and employer portals. I
+    led the development of the seeker-side platform using 
+    <span className="text-sky-600">Next.js</span> with the Page
+    Router, and contributed to the employer-side front-end built with 
+    <span className="text-sky-600">React.js</span>. The
+    platform enabled Australian users to search and apply for
+    jobs, featuring employer-specific job listings, a teleprompter tool for video intros, and an
+    intuitive job search experience—built with scalability,
+    performance, SEO, and user-friendliness in mind.
+  </p>`,
   },
   {
     company: "Codility Solutions",
